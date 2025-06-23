@@ -14,25 +14,43 @@ import Section4 from './Components/section4';
 import Homefinal from './Components/homefinal';
 import Challenge from './Components/Challenge';
 import Leaderboard from './Components/Leaderboard';
+import { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const redirectPath = params.get("redirect");
+
+    if (redirectPath) {
+      sessionStorage.removeItem("redirected");
+      navigate(redirectPath, { replace: true });
+    }
+  }, [location.search, navigate]);
+
+  return null;
+}
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <RedirectHandler />  {/* This handles redirects on refresh/direct URL */}
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Homefinal/>}></Route>
-          <Route path="/Projects" element={<Projects/>}></Route>
-          <Route path="/Database" element={<Database/>}></Route>
-          <Route path="/Team" element={<Team/>}></Route>
-          <Route path="/Comp" element={<Comp/>}></Route>
+          <Route path="/" element={<Homefinal />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Database" element={<Database />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="/Comp" element={<Comp />} />
           <Route path="/Challenge" element={<Challenge />} />
           <Route path="/Leaderboard" element={<Leaderboard />} />
-        </Routes> 
+        </Routes>
+        <Footer />
       </Router>
-      <br></br>
-    <Footer/>
-  </div>
+    </div>
   );
 }
-
 export default App;
