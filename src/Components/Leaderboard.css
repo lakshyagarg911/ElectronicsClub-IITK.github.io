@@ -29,13 +29,14 @@
   max-width: 900px;
   width: 90%;
   max-height: 80vh;
+  overflow-x: scroll;
 }
 
 
 .leaderboard-content h1 {
   font-size: 4rem;
   margin: 20px 0;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 table {
