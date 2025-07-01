@@ -107,7 +107,7 @@ const Footer = () => {
       className="text-center p-4"
       style={{ backgroundColor: "rgb(172, 206, 70)", color:"black" }}
     >
-      © 2024 Copyright:
+      © 2025 Copyright:
       &nbsp;&nbsp;&nbsp;<a className="text-reset" href="/">
           EClub IIT KANPUR
       </a>
