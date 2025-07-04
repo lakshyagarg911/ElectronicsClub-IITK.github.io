@@ -15,6 +15,7 @@ header{
     flex-flow:column;
     text-align: center;
     color: #ffffff;
+    overflow: hidden; 
  }
  .headerimg{
    height: 700px;
