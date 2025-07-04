@@ -18,10 +18,20 @@ const Card = ({ title, items }) => {
                 <b><h4>{item.name}</h4></b>
                 <h5>{item.vertical}</h5>
 
-                <ul id="ul" className="social">
-                  <li><a href={item.facebook} target="_blank" rel="noopener noreferrer" ><i className="fa fa-instagram"></i></a></li>
-                  &nbsp;&nbsp; &nbsp;&nbsp; <li><a href={item.email} target="_blank" rel="noopener noreferrer" ><i className="fa fa-envelope"></i></a></li>
-                </ul>
+               <ul id="ul" className="social">
+  <li>
+    <a href={item.facebook} target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-instagram"></i>
+    </a>
+  </li>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <li>
+    <a href={`mailto:${item.email}`} target="_blank" rel="noopener noreferrer">
+      <i className="fa fa-envelope"></i>
+    </a>
+  </li>
+</ul>
+
               </div>
             </div>
           </div>

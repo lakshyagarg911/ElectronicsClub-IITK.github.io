@@ -5,6 +5,7 @@
     background-color: black;
     height: auto;
     margin-top: 50px;
+      overflow: hidden; 
 }
 .heading{
     background-color: black;
