@@ -11,6 +11,7 @@ body {
   font-size: 3.5vw; 
   text-align: center;
   font-weight: 700;
+  margin-bottom: 10px;
   color: rgb(255, 254, 254);
 }
 
@@ -18,7 +19,7 @@ body {
   color: white;
   font-weight: 700;
   font-size: 3vw; 
-  
+  margin-bottom:10px;
 }
 
 .horizontal-section {
@@ -27,37 +28,48 @@ body {
   margin-right: auto;
   margin-top: 5%; 
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   font-family: 'Ubuntu';
   border-radius: 50px;
   border-color: #BBDF4D;
   border-width: 7px;
   border-style:solid;
   box-shadow: 0px 4px 10px #BBDF4D;
-
+  scroll-snap-align:start;
+  position: relative;
+  height: 700px;
 }
 
 .horizontal {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
+  flex-grow:1;
 }
 
 .image-container {
   flex: 1;
   width: 100%; 
   border-radius: 50px;
+  max-width:400px;
+  height:250px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .image-container img {
   margin-left: 0; /* Adjust margin for small screens */
   height: auto;
   border-radius: 50px;
-  width: 60%; /* Use 100% for responsive width */
+  object-fit:cover;
+  max-width:400px;
+  height:250px;
+  width: 80%; /* Use 100% for responsive width */
 }
 
 .text-container {
@@ -67,8 +79,15 @@ body {
   font-family: 'ubuntu';
   margin-left: 10%;
   margin-right: 10%;
-  margin-top:4%;
+  margin-top:10px;
   font-family: 'poppins';
+  justify-content: space-between;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-bottom: 50px;
+  height: 300px;
 }
 .read_more{
     background-color: #BBDF4D;
@@ -137,4 +156,55 @@ body {
     border-radius: 50px;
     width: 90%; /* Use 100% for responsive width */
   }
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 60px;
+  padding: 20px;
+  padding-left: 80px; 
+  padding-right: 40px; 
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #BBDF4D;
+  border-radius: 4px;
+}
+
+.horizontal-section {
+  flex: 0 0 400px; /* fixed width cards */
+  min-width: 400px;
+  scroll-snap-align: start;
+}
+
+.cta-button {
+  margin-top: 15px;
+  background-color: #BBDF4D;
+  color: black;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+}
+
+.cta-button:hover {
+  background-color: #a8c93e;
+}
+
+.description-scroll{
+  max-height: 230px;
+  overflow-y: auto;
+  margin-bottom: 10px;
 }
