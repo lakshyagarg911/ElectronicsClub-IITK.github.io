@@ -35,7 +35,7 @@ const Section3 = () => {
       <Card2
         imageUrl="wintercamp.png"
         heading="Winter Camp"
-        description="An immersive program where participants dive deep into electronics ,blending hands-on workshops with lectures."
+        description="Camp organised during the winter vacation to give a practical intro in various domains."
       />
       <Card2
         imageUrl="lectures.jpg"
