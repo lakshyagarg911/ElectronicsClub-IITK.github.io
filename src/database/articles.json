@@ -1,0 +1,11 @@
+{
+  "Articles": [
+    {
+      "title": "Quantum Computing 101: How to Build a Quantum Computer",
+      "description": "A beginner-friendly guide to the basics of quantum computing, including how quantum gates and qubits work.",
+      "imagePath": "articles/quantum.webp",
+      "url": "https://medium.com/electronics-club-iitk/quantum-computing-101-how-to-build-a-quantum-computer-77c7311333f8",
+      "year": "2025"
+    }
+  ]
+}
