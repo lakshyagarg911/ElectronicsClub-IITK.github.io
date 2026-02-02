@@ -180,27 +180,12 @@
     "index.html": "/index.html",
     "static/media/secondActivity.java": "/static/media/secondActivity.271cd73ca387dd937031.java",
     "static/media/embedded.m": "/static/media/embedded.25ecb2104a600e9863c7.m",
-    "main.c07e8022.css.map": "/static/css/main.c07e8022.css.map",
-    "main.8fd04912.js.map": "/static/js/main.8fd04912.js.map",
->>>>>>> 72bf782 (last_changes_2526)
+    "main.1105f6b2.css.map": "/static/css/main.1105f6b2.css.map",
+    "main.1d34e844.js.map": "/static/js/main.1d34e844.js.map",
     "787.75bd6106.chunk.js.map": "/static/js/787.75bd6106.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c07e8022.css",
-<<<<<<< HEAD
-    "static/js/main.3d45b1c5.js"
-    "static/media/FpgaExamples2.rar": "/static/media/FpgaExamples2.743d38b66056f001f1b3.rar",
-    "static/media/secondActivity.java": "/static/media/secondActivity.271cd73ca387dd937031.java",
-    "static/media/embedded.m": "/static/media/embedded.25ecb2104a600e9863c7.m",
-    "main.5f8c6993.css.map": "/static/css/main.5f8c6993.css.map",
-    "main.8c1dfed2.js.map": "/static/js/main.8c1dfed2.js.map",
-    "453.b82c14f9.chunk.js.map": "/static/js/453.b82c14f9.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.5f8c6993.css",
-    "static/js/main.8c1dfed2.js"
-=======
-    "static/js/main.8fd04912.js"
->>>>>>> 72bf782 (last_changes_2526)
+    "static/css/main.1105f6b2.css",
+    "static/js/main.1d34e844.js"
   ]
 }
