@@ -15,6 +15,7 @@ import Homefinal from './Components/homefinal';
 import Challenge from './Components/Challenge';
 import Leaderboard from './Components/Leaderboard';
 import Articles from './Components/Articles';  
+import Gallery from './Components/Gallery';
 import RecentCompetitions from './Components/RecentCompetitions';
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -53,6 +54,7 @@ function App() {
           <Route path="/Comp" element={<Comp />} />
           <Route path="/Challenge" element={<Challenge />} />
           <Route path="/Leaderboard" element={<Leaderboard />} />
+          <Route path="/Gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </Router>
